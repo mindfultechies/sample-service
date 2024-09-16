@@ -1,4 +1,8 @@
-package com.sample.test.services.circuitbreaker
+package com.sample.test.services.circuitbreaker;
+
+import org.springframework.stereotype.Service;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import org.springframework.http.*;
 
 @Service
 public class ExternalService{
