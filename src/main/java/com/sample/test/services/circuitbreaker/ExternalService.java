@@ -3,7 +3,7 @@ package com.sample.test.services.circuitbreaker
 @Service
 public class ExternalService{
 
-    @CircuitBreaker(name = "test", fallbackMethod = "fallback")
+    @CircuitBreaker(name = "tst-service", fallbackMethod = "fallback")
     public ResponseEntity<String> callExternalService(String url)  {
         throw new RuntimeException("Simulated failure");
     }
